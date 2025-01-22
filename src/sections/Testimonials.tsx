@@ -42,23 +42,24 @@ export const Testimonials = () => {
           Beyound Expectations
         </h2>
         <p className="text-white/70 text-lg md:text-xl  max-w-sm mx-auto tracking-tight text-center mt-5">
-          Our revolutionary AI SEO tools have transformed our client's
+          Our revolutionary AI SEO tools have transformed our client&apos;s
           strategies
         </p>
         <div className="flex overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
           <motion.div
             initial={{
-            translateX:"-50%"
+              translateX: '-50%',
             }}
             animate={{
-              translateX: "0%"
+              translateX: '0%',
             }}
             transition={{
               duration: 30,
               repeat: Infinity,
-              ease: "linear"
+              ease: 'linear',
             }}
-            className="flex gap-5 flex-none pr-5">
+            className="flex gap-5 flex-none pr-5"
+          >
             {[...testimonials, ...testimonials].map((testimonial) => (
               <div
                 key={testimonial.name}
